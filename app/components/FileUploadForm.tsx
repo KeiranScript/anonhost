@@ -19,7 +19,7 @@ export default function FileUploadForm() {
     setIsUploading(true)
 
     try {
-      const response = await fetch('http://localhost:8000/upload', {
+      const response = await fetch('https://api.kuuichi.xyz/upload', {
         method: 'POST',
         body: formData,
       })
@@ -45,7 +45,7 @@ export default function FileUploadForm() {
               <div className="flex flex-col items-center justify-center pt-5 pb-6">
                 <Upload className="w-10 h-10 mb-3 text-[#7aa2f7]" />
                 <p className="mb-2 text-sm text-[#7aa2f7]"><span className="font-semibold">Click to upload</span> or drag and drop</p>
-                <p className="text-xs text-[#565f89]">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
+                {/* <p className="text-xs text-[#565f89]">SVG, PNG, JPG or GIF (MAX. 800x400px)</p> */}
               </div>
               <Input 
                 id="file-upload" 
