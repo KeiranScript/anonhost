@@ -1,5 +1,5 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
   "rules": {
     "react/no-unused-vars": "off",
     "react/no-empty-object-type": "off"
